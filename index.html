@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pangan Lokal Indonesia — Mengenal, Menghargai, Mempromosikan</title>
+  <meta name="description" content="Website informasi dan promosi produk pangan lokal Indonesia. Kenali, hargai, dan dukung kekayaan pangan Nusantara.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+
+      <a href="index.html" class="nav-brand">
+        <span class="brand-mark">PL</span>
+        <span class="brand-name" data-i18n="brand">Pangan Lokal Indonesia</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active" data-i18n="nav.home">Beranda</a></li>
+          <li><a href="detail.html" class="nav-link" data-i18n="nav.products">Produk</a></li>
+          <li><a href="artikel.html" class="nav-link" data-i18n="nav.articles">Artikel</a></li>
+          <li><a href="galeri.html" class="nav-link" data-i18n="nav.gallery">Galeri</a></li>
+          <li><a href="deskripsi.html" class="nav-link" data-i18n="nav.description">Deskripsi</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-icon" id="themeToggle" aria-label="Ganti tema">
+            <span class="icon-sun" aria-hidden="true">☀</span>
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+          </button>
+          <button class="btn-lang" id="langToggle" aria-label="Ganti bahasa">
+            <span class="lang-current" id="langCurrent">ID</span>
+          </button>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-text">
+          <p class="hero-eyebrow" data-i18n="hero.eyebrow">Pangan Lokal Indonesia</p>
+          <h1 class="hero-title" data-i18n="hero.title">
+            Mengenal, Menghargai, dan Mempromosikan Kekayaan Pangan Nusantara
+          </h1>
+          <p class="hero-desc" data-i18n="hero.desc">
+            Indonesia memiliki kekayaan pangan lokal yang sangat beragam. Setiap daerah
+            memiliki bahan pangan, makanan, minuman, dan produk olahan dengan cita rasa,
+            cara pengolahan, serta cerita budaya yang berbeda.
+          </p>
+          <a href="detail.html" class="btn btn-primary" data-i18n="hero.cta">
+            Jelajahi Kekayaan Pangan Nusantara
+          </a>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-img hero-img-main">
+            <img
+              src="https://i.ibb.co.com/vxH7sTwn/682fee6f3a630b2883f051fbad567c18.jpg"
+              alt="Pangan Lokal Indonesia"
+              loading="eager">
+          </div>
+          <div class="hero-img hero-img-small hero-img-small-1">
+            <img
+              src="https://i.ibb.co.com/NdCM638n/402f0095adba485fbc29b8badf16cf3a.jpg"
+              alt="Produk pangan lokal"
+              loading="lazy">
+          </div>
+          <div class="hero-img hero-img-small hero-img-small-2">
+            <img
+              src="https://i.ibb.co.com/gMztjLsn/700953b6047c145a72c8bc3fe88a41bd.jpg"
+              alt="Produk pangan lokal"
+              loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= STATISTIK ================= -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" id="statProducts">0</div>
+          <div class="stat-label" data-i18n="stats.products">Produk</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="statCategories">0</div>
+          <div class="stat-label" data-i18n="stats.categories">Kategori</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="statRegions">0</div>
+          <div class="stat-label" data-i18n="stats.regions">Daerah</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= PENGENALAN ================= -->
+    <section class="section intro">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="intro.title">Mengapa Pangan Lokal Penting?</h2>
+        </div>
+        <div class="intro-content">
+          <p data-i18n="intro.p1">
+            Pangan lokal bukan hanya sekadar makanan. Di dalamnya terdapat kekayaan budaya,
+            pengetahuan tradisional, kreativitas masyarakat, serta potensi ekonomi yang dapat
+            terus dikembangkan.
+          </p>
+          <p data-i18n="intro.p2">
+            Mengenalkan pangan lokal kepada generasi muda merupakan salah satu cara untuk
+            membantu menjaga keberadaan kuliner dan produk pangan Nusantara agar tetap dikenal
+            dan dihargai.
+          </p>
+          <p data-i18n="intro.p3">
+            Selain itu, pemanfaatan pangan lokal juga dapat memberikan peluang bagi masyarakat
+            untuk mengembangkan produk yang memiliki nilai tambah dan daya saing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= INFOGRAFIS SCROLL ================= -->
+    <section class="section infographic">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="info.title">Perjalanan Pangan Lokal</h2>
+          <p class="section-subtitle" data-i18n="info.subtitle">
+            Dari bahan lokal hingga menjadi produk bernilai
+          </p>
+        </div>
+
+        <div class="info-steps">
+
+          <article class="info-step reveal">
+            <div class="info-step-number">01</div>
+            <h3 class="info-step-title" data-i18n="info.step1.title">Bahan Lokal</h3>
+            <p class="info-step-desc" data-i18n="info.step1.desc">
+              Bersumber dari kekayaan alam Indonesia: singkong, pisang, kedelai, ikan,
+              rempah, dan berbagai hasil pertanian daerah.
+            </p>
+          </article>
+
+          <article class="info-step reveal">
+            <div class="info-step-number">02</div>
+            <h3 class="info-step-title" data-i18n="info.step2.title">Proses Pengolahan</h3>
+            <p class="info-step-desc" data-i18n="info.step2.desc">
+              Pengetahuan tradisional diwariskan dari generasi ke generasi, mulai dari
+              fermentasi, pengeringan, hingga pengolahan dengan rempah.
+            </p>
+          </article>
+
+          <article class="info-step reveal">
+            <div class="info-step-number">03</div>
+            <h3 class="info-step-title" data-i18n="info.step3.title">Produk Pangan</h3>
+            <p class="info-step-desc" data-i18n="info.step3.desc">
+              Menghasilkan beragam makanan, camilan, minuman, dan produk fermentasi
+              dengan cita rasa dan karakter khas setiap daerah.
+            </p>
+          </article>
+
+          <article class="info-step reveal">
+            <div class="info-step-number">04</div>
+            <h3 class="info-step-title" data-i18n="info.step4.title">Nilai Budaya</h3>
+            <p class="info-step-desc" data-i18n="info.step4.desc">
+              Pangan lokal menyimpan cerita, identitas, dan kebiasaan masyarakat yang
+              menjadi bagian dari warisan budaya Nusantara.
+            </p>
+          </article>
+
+          <article class="info-step reveal">
+            <div class="info-step-number">05</div>
+            <h3 class="info-step-title" data-i18n="info.step5.title">Potensi Ekonomi</h3>
+            <p class="info-step-desc" data-i18n="info.step5.desc">
+              Produk pangan lokal dapat dikembangkan menjadi usaha yang bernilai tambah
+              dan berdaya saing di pasar yang lebih luas.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= PRODUK PILIHAN ================= -->
+    <section class="section featured">
+      <div class="container">
+        <div class="section-header section-header-row">
+          <h2 class="section-title" data-i18n="featured.title">Produk Pilihan</h2>
+          <a href="detail.html" class="link-more" data-i18n="featured.more">Lihat Semua Produk →</a>
+        </div>
+
+        <div class="products-grid" id="featuredProducts">
+          <!-- diisi oleh JavaScript (app.js) -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= ARTIKEL TERBARU ================= -->
+    <section class="section articles-preview">
+      <div class="container">
+        <div class="section-header section-header-row">
+          <h2 class="section-title" data-i18n="articlesPreview.title">Artikel Terbaru</h2>
+          <a href="artikel.html" class="link-more" data-i18n="articlesPreview.more">Lihat Semua Artikel →</a>
+        </div>
+
+        <div class="articles-grid" id="latestArticles">
+          <!-- diisi oleh JavaScript (app.js) -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="section cta">
+      <div class="container cta-inner">
+        <h2 class="cta-title" data-i18n="cta.title">
+          Kenali Pangan Lokal. Hargai Budayanya. Dukung Potensinya.
+        </h2>
+        <p class="cta-desc" data-i18n="cta.desc">
+          Jelajahi katalog dan temukan berbagai kekayaan pangan lokal Indonesia.
+        </p>
+        <a href="detail.html" class="btn btn-primary" data-i18n="cta.button">
+          Jelajahi Katalog
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <span class="brand-mark">PL</span>
+        <span class="brand-name-footer">Pangan Lokal Indonesia</span>
+      </div>
+
+      <p class="footer-text" data-i18n="footer.text">
+        Website informasi dan promosi produk pangan lokal Indonesia.
+      </p>
+
+      <p class="footer-copy" data-i18n="footer.copy">
+        © 2026 Pangan Lokal Indonesia. Dibuat sebagai proyek pembelajaran.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- ================= SCRIPT ================= -->
+  <script src="js/data.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artikel Pangan Lokal — Pangan Lokal Indonesia</title>
+  <meta name="description" content="Kumpulan artikel informatif mengenai pangan lokal Indonesia: budaya, pelestarian, ekonomi, dan peran generasi muda.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+
+      <a href="index.html" class="nav-brand">
+        <span class="brand-mark">PL</span>
+        <span class="brand-name" data-i18n="brand">Pangan Lokal Indonesia</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Beranda</a></li>
+          <li><a href="detail.html" class="nav-link" data-i18n="nav.products">Produk</a></li>
+          <li><a href="artikel.html" class="nav-link active" data-i18n="nav.articles">Artikel</a></li>
+          <li><a href="galeri.html" class="nav-link" data-i18n="nav.gallery">Galeri</a></li>
+          <li><a href="deskripsi.html" class="nav-link" data-i18n="nav.description">Deskripsi</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-icon" id="themeToggle" aria-label="Ganti tema">
+            <span class="icon-sun" aria-hidden="true">☀</span>
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+          </button>
+          <button class="btn-lang" id="langToggle" aria-label="Ganti bahasa">
+            <span class="lang-current" id="langCurrent">ID</span>
+          </button>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title" data-i18n="articles.title">Artikel Pangan Lokal</h1>
+        <p class="page-desc" data-i18n="articles.desc">
+          Kumpulan artikel informatif mengenai pangan lokal Indonesia — mulai dari budaya,
+          pelestarian, ekonomi, hingga peran generasi muda.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ================= ARTIKEL GRID ================= -->
+    <section class="section articles-section">
+      <div class="container">
+        <div class="articles-grid" id="articlesGrid">
+          <!-- diisi oleh JavaScript (app.js) -->
+        </div>
+
+        <p class="empty-state" id="emptyState" hidden data-i18n="articles.empty">
+          Belum ada artikel yang ditampilkan.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= MODAL ARTIKEL ================= -->
+  <div class="modal" id="articleModal" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="modal-content" role="document">
+
+      <button class="modal-close" id="modalClose" aria-label="Tutup artikel">×</button>
+
+      <div class="modal-scroll">
+
+        <div class="modal-hero">
+          <img id="modalImage" src="" alt="" loading="lazy">
+        </div>
+
+        <div class="modal-body">
+
+          <div class="modal-meta">
+            <span class="badge" id="modalCategory">Kategori</span>
+            <span class="modal-date" id="modalDate">Tanggal</span>
+          </div>
+
+          <h2 class="modal-title" id="modalTitle">Judul Artikel</h2>
+
+          <div class="modal-content-text" id="modalContent">
+            <!-- paragraf diisi oleh JavaScript -->
+          </div>
+
+          <div class="modal-support">
+            <img id="modalSupportImage" src="" alt="" loading="lazy">
+          </div>
+
+          <div class="modal-conclusion">
+            <h3 class="modal-conclusion-title" data-i18n="articles.conclusion">Kesimpulan</h3>
+            <p id="modalConclusion"></p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <span class="brand-mark">PL</span>
+        <span class="brand-name-footer">Pangan Lokal Indonesia</span>
+      </div>
+
+      <p class="footer-text" data-i18n="footer.text">
+        Website informasi dan promosi produk pangan lokal Indonesia.
+      </p>
+
+      <p class="footer-copy" data-i18n="footer.copy">
+        © 2026 Pangan Lokal Indonesia. Dibuat sebagai proyek pembelajaran.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- ================= SCRIPT ================= -->
+  <script src="js/data.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

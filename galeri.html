@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Pangan Lokal — Pangan Lokal Indonesia</title>
+  <meta name="description" content="Galeri dokumentasi visual pangan lokal Indonesia — foto produk, makanan, bahan pangan, proses pembuatan, dan kemasan.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+
+      <a href="index.html" class="nav-brand">
+        <span class="brand-mark">PL</span>
+        <span class="brand-name" data-i18n="brand">Pangan Lokal Indonesia</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Beranda</a></li>
+          <li><a href="detail.html" class="nav-link" data-i18n="nav.products">Produk</a></li>
+          <li><a href="artikel.html" class="nav-link" data-i18n="nav.articles">Artikel</a></li>
+          <li><a href="galeri.html" class="nav-link active" data-i18n="nav.gallery">Galeri</a></li>
+          <li><a href="deskripsi.html" class="nav-link" data-i18n="nav.description">Deskripsi</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-icon" id="themeToggle" aria-label="Ganti tema">
+            <span class="icon-sun" aria-hidden="true">☀</span>
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+          </button>
+          <button class="btn-lang" id="langToggle" aria-label="Ganti bahasa">
+            <span class="lang-current" id="langCurrent">ID</span>
+          </button>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title" data-i18n="gallery.title">Galeri Pangan Nusantara</h1>
+        <p class="page-desc" data-i18n="gallery.desc">
+          Dokumentasi visual pangan lokal Indonesia — foto produk, makanan, bahan pangan,
+          proses pembuatan, dan kemasan dari berbagai daerah.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ================= GALERI GRID ================= -->
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- diisi oleh JavaScript (app.js) -->
+        </div>
+
+        <p class="empty-state" id="emptyState" hidden data-i18n="gallery.empty">
+          Belum ada gambar yang ditampilkan.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= LIGHTBOX ================= -->
+  <div class="lightbox" id="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Pratinjau gambar">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+
+    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup pratinjau">×</button>
+
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Gambar sebelumnya">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Gambar berikutnya">›</button>
+
+    <div class="lightbox-content" role="document">
+      <img id="lightboxImage" src="" alt="" loading="lazy">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <span class="brand-mark">PL</span>
+        <span class="brand-name-footer">Pangan Lokal Indonesia</span>
+      </div>
+
+      <p class="footer-text" data-i18n="footer.text">
+        Website informasi dan promosi produk pangan lokal Indonesia.
+      </p>
+
+      <p class="footer-copy" data-i18n="footer.copy">
+        © 2026 Pangan Lokal Indonesia. Dibuat sebagai proyek pembelajaran.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- ================= SCRIPT ================= -->
+  <script src="js/data.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

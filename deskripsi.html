@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deskripsi Website — Pangan Lokal Indonesia</title>
+  <meta name="description" content="Dokumentasi lengkap proyek Website Promosi Produk Pangan Lokal Indonesia: latar belakang, tujuan, fitur, teknologi, dan status perencanaan.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+
+      <a href="index.html" class="nav-brand">
+        <span class="brand-mark">PL</span>
+        <span class="brand-name" data-i18n="brand">Pangan Lokal Indonesia</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Beranda</a></li>
+          <li><a href="detail.html" class="nav-link" data-i18n="nav.products">Produk</a></li>
+          <li><a href="artikel.html" class="nav-link" data-i18n="nav.articles">Artikel</a></li>
+          <li><a href="galeri.html" class="nav-link" data-i18n="nav.gallery">Galeri</a></li>
+          <li><a href="deskripsi.html" class="nav-link active" data-i18n="nav.description">Deskripsi</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-icon" id="themeToggle" aria-label="Ganti tema">
+            <span class="icon-sun" aria-hidden="true">☀</span>
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+          </button>
+          <button class="btn-lang" id="langToggle" aria-label="Ganti bahasa">
+            <span class="lang-current" id="langCurrent">ID</span>
+          </button>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title" data-i18n="description.title">Deskripsi Website</h1>
+        <p class="page-desc" data-i18n="description.desc">
+          Dokumentasi lengkap proyek Website Promosi Produk Pangan Lokal Indonesia.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ================= DOKUMENTASI ================= -->
+    <section class="section docs-section">
+      <div class="container docs-layout">
+
+        <!-- SIDEBAR NAVIGASI (desktop) -->
+        <aside class="docs-sidebar" id="docsSidebar">
+          <h3 class="docs-sidebar-title" data-i18n="description.toc">Daftar Isi</h3>
+          <nav class="docs-nav">
+            <a href="#sec-1"  class="docs-link">1. Nama Proyek</a>
+            <a href="#sec-2"  class="docs-link">2. Latar Belakang</a>
+            <a href="#sec-3"  class="docs-link">3. Tujuan Pembuatan</a>
+            <a href="#sec-4"  class="docs-link">4. Konsep Website</a>
+            <a href="#sec-5"  class="docs-link">5. Target Pengguna</a>
+            <a href="#sec-6"  class="docs-link">6. Fitur Website</a>
+            <a href="#sec-7"  class="docs-link">7. Teknologi</a>
+            <a href="#sec-8"  class="docs-link">8. Sistem Data</a>
+            <a href="#sec-9"  class="docs-link">9. Struktur Folder</a>
+            <a href="#sec-10" class="docs-link">10. Alur Penggunaan</a>
+            <a href="#sec-11" class="docs-link">11. Desain Antarmuka</a>
+            <a href="#sec-12" class="docs-link">12. Keamanan</a>
+            <a href="#sec-13" class="docs-link">13. Kelebihan Konsep</a>
+            <a href="#sec-14" class="docs-link">14. Batasan Sistem</a>
+            <a href="#sec-15" class="docs-link">15. Kesimpulan</a>
+          </nav>
+        </aside>
+
+        <!-- KONTEN DOKUMENTASI -->
+        <div class="docs-content">
+
+          <!-- 1 -->
+          <section class="docs-block" id="sec-1">
+            <h2 class="docs-heading">1. Nama Proyek</h2>
+            <p><strong>Website Promosi Produk Pangan Lokal Indonesia</strong></p>
+          </section>
+
+          <!-- 2 -->
+          <section class="docs-block" id="sec-2">
+            <h2 class="docs-heading">2. Latar Belakang</h2>
+            <p>
+              Indonesia memiliki beragam produk pangan lokal yang menjadi bagian dari kekayaan
+              budaya dan potensi ekonomi masyarakat. Namun, tidak semua produk pangan lokal
+              dikenal secara luas, terutama oleh generasi muda.
+            </p>
+            <p>
+              Perkembangan teknologi informasi dan media digital dapat dimanfaatkan sebagai
+              sarana untuk mengenalkan produk pangan lokal dengan cara yang lebih menarik dan
+              mudah diakses.
+            </p>
+            <p>
+              Oleh karena itu, dibuat sebuah website yang berfungsi sebagai media informasi dan
+              promosi produk pangan lokal Indonesia. Website ini menyajikan informasi produk
+              melalui teks, gambar, artikel, dan galeri.
+            </p>
+            <p>
+              Website ini dibuat sebagai proyek berbasis teknologi informasi dengan menerapkan
+              <strong>HTML, CSS, dan JavaScript</strong> tanpa menggunakan sistem database.
+            </p>
+          </section>
+
+          <!-- 3 -->
+          <section class="docs-block" id="sec-3">
+            <h2 class="docs-heading">3. Tujuan Pembuatan</h2>
+            <ol class="docs-list">
+              <li>Mengenalkan berbagai produk pangan lokal Indonesia kepada masyarakat.</li>
+              <li>Menyediakan informasi mengenai produk pangan lokal dalam bentuk digital.</li>
+              <li>Mempromosikan produk melalui teks dan media visual yang menarik.</li>
+              <li>Menerapkan kemampuan dasar HTML, CSS, dan JavaScript dalam sebuah proyek nyata.</li>
+              <li>Membuat website yang dapat diakses melalui perangkat komputer maupun smartphone.</li>
+              <li>Menerapkan konsep desain antarmuka yang sederhana, informatif, dan mudah digunakan.</li>
+              <li>Mendukung penggunaan bahasa Indonesia dan English.</li>
+            </ol>
+          </section>
+
+          <!-- 4 -->
+          <section class="docs-block" id="sec-4">
+            <h2 class="docs-heading">4. Konsep Website</h2>
+            <p>
+              Website dirancang sebagai <strong>media informasi dan promosi</strong>, bukan
+              marketplace atau sistem transaksi.
+            </p>
+            <p>
+              Setiap produk memiliki informasi: nama, kategori, asal daerah, gambar (URL),
+              deskripsi, dan keunikan.
+            </p>
+            <p>
+              Data tidak dimasukkan melalui dashboard atau database. Data disiapkan langsung
+              dalam <strong>kode JavaScript</strong> sehingga website dapat berjalan dengan
+              struktur yang sederhana.
+            </p>
+          </section>
+
+          <!-- 5 -->
+          <section class="docs-block" id="sec-5">
+            <h2 class="docs-heading">5. Target Pengguna</h2>
+            <ul class="docs-list">
+              <li>Pelajar</li>
+              <li>Masyarakat umum</li>
+              <li>Pengunjung yang ingin mengenal pangan lokal Indonesia</li>
+              <li>Pengguna yang mencari informasi mengenai produk pangan lokal</li>
+            </ul>
+          </section>
+
+          <!-- 6 -->
+          <section class="docs-block" id="sec-6">
+            <h2 class="docs-heading">6. Fitur Website</h2>
+
+            <h3 class="docs-subheading">6.1 Beranda</h3>
+            <p>Halaman utama website dengan hero, statistik, pengenalan, infografis scroll, produk pilihan, artikel terbaru, dan CTA.</p>
+
+            <h3 class="docs-subheading">6.2 Detail Produk</h3>
+            <p>Menampilkan 20 produk pangan lokal dalam bentuk card. Setiap card berisi foto, nama, kategori, dan asal daerah. Klik card untuk membuka informasi lengkap (deskripsi & keunikan) secara expand.</p>
+
+            <h3 class="docs-subheading">6.3 Search</h3>
+            <p>Pencarian produk berdasarkan nama, berjalan murni menggunakan JavaScript.</p>
+
+            <h3 class="docs-subheading">6.4 Filter Kategori</h3>
+            <p>Menyaring produk berdasarkan kategori: Semua, Makanan, Camilan, Minuman, dan Pangan Fermentasi.</p>
+
+            <h3 class="docs-subheading">6.5 Artikel</h3>
+            <p>Enam artikel informatif mengenai pangan lokal, ditampilkan sebagai card dan dibuka melalui modal popup.</p>
+
+            <h3 class="docs-subheading">6.6 Galeri</h3>
+            <p>Kumpulan gambar dari URL eksternal dengan tampilan grid responsif dan pratinjau lightbox.</p>
+
+            <h3 class="docs-subheading">6.7 Responsif</h3>
+            <p>Website dapat menyesuaikan ukuran layar: smartphone, tablet, laptop, dan desktop.</p>
+
+            <h3 class="docs-subheading">6.8 Dark Mode</h3>
+            <p>Pilihan tampilan Light Mode dan Dark Mode melalui tombol pada navbar, dengan transisi warna halus.</p>
+
+            <h3 class="docs-subheading">6.9 Animasi UI</h3>
+            <p>Animasi sederhana: hover card, transisi tombol, munculnya konten saat scroll, smooth scrolling, dan transisi dark mode.</p>
+
+            <h3 class="docs-subheading">6.10 Pilihan Bahasa</h3>
+            <p>Dua pilihan bahasa: Indonesia dan English. Sistem bahasa menggunakan data terjemahan di dalam JavaScript.</p>
+          </section>
+
+          <!-- 7 -->
+          <section class="docs-block" id="sec-7">
+            <h2 class="docs-heading">7. Teknologi yang Digunakan</h2>
+            <ul class="docs-list">
+              <li><strong>HTML</strong> — struktur halaman website.</li>
+              <li><strong>CSS</strong> — tampilan, layout, responsive, dark mode, dan animasi.</li>
+              <li><strong>JavaScript</strong> — data produk, search, filter, expand, modal, dark mode, bahasa, dan interaksi pengguna.</li>
+            </ul>
+          </section>
+
+          <!-- 8 -->
+          <section class="docs-block" id="sec-8">
+            <h2 class="docs-heading">8. Sistem Data</h2>
+            <p>
+              Website <strong>tidak menggunakan database</strong>. Data produk, artikel, dan
+              galeri disimpan langsung dalam file <code>js/data.js</code>, sedangkan data
+              terjemahan disimpan di <code>js/language.js</code>.
+            </p>
+            <p>
+              Jika ingin menambahkan atau mengubah data, perubahan dilakukan langsung pada
+              file kode tersebut.
+            </p>
+          </section>
+
+          <!-- 9 -->
+          <section class="docs-block" id="sec-9">
+            <h2 class="docs-heading">9. Struktur Folder</h2>
+            <pre class="docs-pre">
+pangan-lokal/
+│
+├── index.html          → Beranda
+├── detail.html         → Detail Produk
+├── artikel.html        → Artikel
+├── galeri.html         → Galeri
+├── deskripsi.html      → Dokumentasi Web
+│
+├── css/
+│   └── style.css       → Seluruh styling
+│
+├── js/
+│   ├── data.js         → Data produk, artikel, galeri
+│   ├── language.js     → Sistem bahasa ID/EN
+│   └── app.js          → Logika interaktif
+│
+└── assets/
+    └── icons/          → Ikon lokal (jika diperlukan)</pre>
+          </section>
+
+          <!-- 10 -->
+          <section class="docs-block" id="sec-10">
+            <h2 class="docs-heading">10. Alur Penggunaan Website</h2>
+            <pre class="docs-pre">
+Pengunjung
+    ↓
+Beranda
+    ↓
+Detail Produk ──→ Search / Filter ──→ Klik Card
+    ↓                                      ↓
+Artikel                                Expand Detail
+    ↓                                  (Deskripsi + Keunikan)
+Galeri
+    ↓
+Deskripsi (Dokumentasi)
+
+Navigasi tersedia di setiap halaman:
+Beranda · Produk · Artikel · Galeri · Deskripsi
+              + Dark Mode + Bahasa (ID/EN)</pre>
+          </section>
+
+          <!-- 11 -->
+          <section class="docs-block" id="sec-11">
+            <h2 class="docs-heading">11. Desain Antarmuka</h2>
+            <p>Konsep desain website menggunakan pendekatan <strong>Modern Nusantara</strong>:</p>
+            <ul class="docs-list">
+              <li>Sederhana, modern, bersih, dan profesional</li>
+              <li>Fokus pada foto produk dan tipografi</li>
+              <li>Konsisten warna &amp; tipografi</li>
+              <li>Tanpa efek glow, neon, atau elemen futuristik</li>
+              <li>Tanpa ikon dekoratif</li>
+              <li>Mengutamakan keterbacaan informasi dan kemudahan navigasi</li>
+            </ul>
+            <p><strong>Palet warna:</strong> Hijau Tua, Cream, Terracotta, Kuning Rempah, Putih.</p>
+            <p><strong>Tipografi:</strong> Poppins (heading) dan Inter (body).</p>
+          </section>
+
+          <!-- 12 -->
+          <section class="docs-block" id="sec-12">
+            <h2 class="docs-heading">12. Keamanan</h2>
+            <p>
+              Karena website tidak menggunakan akun pengguna dan tidak menyimpan data pribadi,
+              sistem keamanan kompleks seperti autentikasi dan database tidak diperlukan.
+            </p>
+            <ul class="docs-list">
+              <li>Tidak memasukkan password atau API key ke dalam kode.</li>
+              <li>Tidak menampilkan data pribadi yang tidak diperlukan.</li>
+              <li>Menggunakan file dan aset yang aman.</li>
+              <li>Melakukan validasi sederhana pada input pencarian.</li>
+              <li>Menjaga struktur kode agar mudah diperiksa dan dikembangkan.</li>
+            </ul>
+          </section>
+
+          <!-- 13 -->
+          <section class="docs-block" id="sec-13">
+            <h2 class="docs-heading">13. Kelebihan Konsep Website</h2>
+            <ul class="docs-list">
+              <li>Lebih mudah dibuat.</li>
+              <li>Tidak memerlukan konfigurasi database.</li>
+              <li>Tidak memerlukan server database.</li>
+              <li>Cocok untuk proyek sekolah.</li>
+              <li>Lebih mudah dipahami oleh pemula.</li>
+              <li>Data sudah tersedia ketika website dijalankan.</li>
+              <li>Dapat dikembangkan secara bertahap.</li>
+              <li>Kebutuhan teknis relatif sederhana.</li>
+            </ul>
+          </section>
+
+          <!-- 14 -->
+          <section class="docs-block" id="sec-14">
+            <h2 class="docs-heading">14. Batasan Sistem</h2>
+            <ol class="docs-list">
+              <li>Tidak terdapat fitur login pengguna.</li>
+              <li>Tidak terdapat dashboard admin.</li>
+              <li>Tidak terdapat fitur menambahkan produk melalui website.</li>
+              <li>Tidak terdapat transaksi online.</li>
+              <li>Tidak terdapat sistem pembayaran.</li>
+              <li>Data produk harus diubah melalui kode.</li>
+              <li>Website berfungsi sebagai media informasi dan promosi, bukan marketplace.</li>
+            </ol>
+          </section>
+
+          <!-- 15 -->
+          <section class="docs-block" id="sec-15">
+            <h2 class="docs-heading">15. Kesimpulan</h2>
+            <p>
+              Website Promosi Produk Pangan Lokal Indonesia merupakan proyek pengembangan
+              website sederhana yang bertujuan untuk mengenalkan dan mempromosikan produk
+              pangan lokal melalui media digital.
+            </p>
+            <p>
+              Website menggunakan HTML, CSS, dan JavaScript tanpa database. Data produk,
+              artikel, dan informasi lainnya disiapkan langsung dalam kode sehingga sistem
+              lebih sederhana dan sesuai untuk proyek sekolah.
+            </p>
+            <p>
+              Meskipun sederhana, website memiliki fitur interaktif lengkap: beranda
+              infografis, detail produk expand, search, filter kategori, artikel modal,
+              galeri, responsive design, dark mode, animasi UI, dan pilihan bahasa
+              Indonesia–English.
+            </p>
+          </section>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <span class="brand-mark">PL</span>
+        <span class="brand-name-footer">Pangan Lokal Indonesia</span>
+      </div>
+
+      <p class="footer-text" data-i18n="footer.text">
+        Website informasi dan promosi produk pangan lokal Indonesia.
+      </p>
+
+      <p class="footer-copy" data-i18n="footer.copy">
+        © 2026 Pangan Lokal Indonesia. Dibuat sebagai proyek pembelajaran.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- ================= SCRIPT ================= -->
+  <script src="js/data.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

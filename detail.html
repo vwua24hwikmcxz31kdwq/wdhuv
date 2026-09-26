@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk Pangan Lokal — Pangan Lokal Indonesia</title>
+  <meta name="description" content="Katalog 20 produk pangan lokal Indonesia. Cari dan jelajahi berdasarkan kategori dan daerah asal.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+
+      <a href="index.html" class="nav-brand">
+        <span class="brand-mark">PL</span>
+        <span class="brand-name" data-i18n="brand">Pangan Lokal Indonesia</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link" data-i18n="nav.home">Beranda</a></li>
+          <li><a href="detail.html" class="nav-link active" data-i18n="nav.products">Produk</a></li>
+          <li><a href="artikel.html" class="nav-link" data-i18n="nav.articles">Artikel</a></li>
+          <li><a href="galeri.html" class="nav-link" data-i18n="nav.gallery">Galeri</a></li>
+          <li><a href="deskripsi.html" class="nav-link" data-i18n="nav.description">Deskripsi</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn-icon" id="themeToggle" aria-label="Ganti tema">
+            <span class="icon-sun" aria-hidden="true">☀</span>
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+          </button>
+          <button class="btn-lang" id="langToggle" aria-label="Ganti bahasa">
+            <span class="lang-current" id="langCurrent">ID</span>
+          </button>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title" data-i18n="products.title">Macam-Macam Produk Pangan Lokal</h1>
+        <p class="page-desc" data-i18n="products.desc">
+          Jelajahi 20 produk pangan lokal Indonesia. Gunakan pencarian atau filter kategori
+          untuk menemukan produk yang ingin Anda kenal lebih dekat.
+        </p>
+      </div>
+    </section>
+
+
+    <!-- ================= SEARCH & FILTER ================= -->
+    <section class="section filter-section">
+      <div class="container">
+
+        <div class="search-wrapper">
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Cari produk berdasarkan nama..."
+            data-i18n-placeholder="products.searchPlaceholder"
+            aria-label="Cari produk">
+          <button class="search-clear" id="searchClear" aria-label="Hapus pencarian" hidden>×</button>
+        </div>
+
+        <div class="filter-wrapper" id="filterWrapper">
+          <button class="filter-btn active" data-filter="all" data-i18n="filter.all">Semua</button>
+          <button class="filter-btn" data-filter="Makanan" data-i18n="filter.food">Makanan</button>
+          <button class="filter-btn" data-filter="Camilan" data-i18n="filter.snack">Camilan</button>
+          <button class="filter-btn" data-filter="Minuman" data-i18n="filter.drink">Minuman</button>
+          <button class="filter-btn" data-filter="Pangan Fermentasi" data-i18n="filter.fermented">Pangan Fermentasi</button>
+        </div>
+
+        <p class="result-count" id="resultCount" data-i18n="products.count">
+          Menampilkan 20 produk
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ================= PRODUK GRID ================= -->
+    <section class="section products-section">
+      <div class="container">
+        <div class="products-grid" id="productsGrid">
+          <!-- diisi oleh JavaScript (app.js) -->
+        </div>
+
+        <p class="empty-state" id="emptyState" hidden data-i18n="products.empty">
+          Produk tidak ditemukan. Coba kata kunci lain atau ubah filter kategori.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <span class="brand-mark">PL</span>
+        <span class="brand-name-footer">Pangan Lokal Indonesia</span>
+      </div>
+
+      <p class="footer-text" data-i18n="footer.text">
+        Website informasi dan promosi produk pangan lokal Indonesia.
+      </p>
+
+      <p class="footer-copy" data-i18n="footer.copy">
+        © 2026 Pangan Lokal Indonesia. Dibuat sebagai proyek pembelajaran.
+      </p>
+
+    </div>
+  </footer>
+
+
+  <!-- ================= SCRIPT ================= -->
+  <script src="js/data.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
